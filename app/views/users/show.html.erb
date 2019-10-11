@@ -3,3 +3,5 @@
 <% @user.posts.each do |post| %>
   <%= link_to post.title, post_path(post) %>
 <% end %>
+
+<!-- Displaying data via a has_many, through relationship looks identical to displaying data through a normal relationship -->
