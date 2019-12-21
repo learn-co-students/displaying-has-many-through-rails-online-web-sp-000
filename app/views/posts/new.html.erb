@@ -1,0 +1,15 @@
+<h1><%= @post.title %></h1>
+
+<%= form_for users_path do |f| %>
+  <ul>
+     <li>
+        <%= f.label :title %>
+        <%= f.text_field :title, autocomplete: :off %>
+     </li>
+     <li>
+       <%= f.label :content %>
+       <%= f.text_area :content, size: '50x10' %>
+     </li>
+  </ul>
+  <%= f.submit%>
+<% end %>
