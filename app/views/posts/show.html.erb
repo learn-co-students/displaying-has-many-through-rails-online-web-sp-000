@@ -1,5 +1,6 @@
 <h2><%= @post.title %></h2>
 <p>
+  There is nothing I need to add so I am goign to write soem gibberish here.
   Content: <%= @post.content %>
 </p>
 Comments:
@@ -7,3 +8,4 @@ Comments:
     <%= link_to comment.user.username, user_path(comment.user) %> said
     <%= comment.content %>
   <% end %>
+
