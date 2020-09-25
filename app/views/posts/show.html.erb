@@ -5,5 +5,6 @@
 Comments:
   <% @post.comments.each do |comment| %>
     <%= link_to comment.user.username, user_path(comment.user) %> said
+    <%# returns the User object associated with that comment, then calls the username method from User %>
     <%= comment.content %>
   <% end %>
